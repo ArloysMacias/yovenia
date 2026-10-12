@@ -21,6 +21,19 @@
     </div>
   </header>
 
+  <div class="wrap no-print" id="export-toolbar">
+    <div class="export-bar" role="toolbar" aria-label="Exportera dokument">
+      <p class="export-bar-label">Spara eller dela dokumentet</p>
+      <div class="export-bar-actions">
+        <button type="button" class="btn-export" id="btn-print">Skriv ut</button>
+        <button type="button" class="btn-export btn-export--primary" id="btn-pdf">
+          Ladda ner PDF
+        </button>
+      </div>
+      <p class="export-hint" id="export-status" hidden></p>
+    </div>
+  </div>
+
   <main class="wrap article-layout">
     <aside class="toc" aria-label="Innehållsförteckning">
       <h2>Innehåll</h2>
@@ -37,7 +50,7 @@
       </ol>
     </aside>
 
-    <article class="article">
+    <article class="article" id="document-export">
       <header class="article-header" id="top">
         <h1>Självbestämmande inom LSS</h1>
         <p class="article-meta">
@@ -394,5 +407,6 @@
       <p class="footer-note">Endast visning · <a href="index.html">Tillbaka till portföljen</a></p>
     </div>
   </footer>
+  <script src="js/export-document.js" defer></script>
 </body>
 </html>
