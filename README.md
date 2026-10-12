@@ -10,7 +10,7 @@ Statisk webbplats — ingen inloggning, ingen backend.
 2. Vänta tills projektet indexeras (webbmodul `yovenia.iml`).
 3. Kör **Serve Yovenia**:
    - **Run → Serve Yovenia**, eller gröna play-knappen om konfigurationen är vald.
-4. Öppna i webbläsaren: **http://localhost:8765/**
+4. Öppna i webbläsaren: **http://localhost:8765/** (eller den port som skriptet visar).
 
 Alternativ utan run-konfiguration:
 
@@ -18,6 +18,8 @@ Alternativ utan run-konfiguration:
 chmod +x serve.sh
 ./serve.sh
 ```
+
+Om port **8765** redan används väljer `serve.sh` automatiskt nästa lediga port. Du kan också ange en egen: `PORT=9000 ./serve.sh`.
 
 Du kan också högerklicka på `index.html` → **Open in Browser** (relativa länkar mellan sidor fungerar bäst med servern ovan).
 
